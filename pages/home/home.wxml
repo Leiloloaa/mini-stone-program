@@ -1,0 +1,54 @@
+<swiper class="screen-swiper square-dot bg-white slider" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+    <swiper-item wx:for="{{swiperList}}" wx:key="index">
+        <image src="{{item.url}}" mode='aspectFill'></image>
+    </swiper-item>
+</swiper>
+<i-notice-bar icon="systemprompt">2018年世界杯,将于6月14日至7月15日举行</i-notice-bar>
+<view class="space"></view>
+<view class="padding text-center">
+    <view class="padding-xl radius shadow-warp bg-white margin-top">打卡</view>
+    <view class="space"></view>
+    <view class="space"></view>
+    <view class="space"></view>
+    <view class="space"></view>
+    <i-grid>
+        <i-grid-item>
+            <i-grid-icon>
+                <image src="../images/icon-vip.png" />
+            </i-grid-icon>
+            <i-grid-label>技术文章</i-grid-label>
+        </i-grid-item>
+        <i-grid-item>
+            <i-grid-icon>
+                <image src="../images/icon-vip.png" />
+            </i-grid-icon>
+            <i-grid-label>杂文</i-grid-label>
+        </i-grid-item>
+        <i-grid-item>
+            <i-grid-icon>
+                <image src="../images/icon-vip.png" />
+            </i-grid-icon>
+            <i-grid-label>历史文章</i-grid-label>
+        </i-grid-item>
+    </i-grid>
+    <i-grid>
+        <i-grid-item>
+            <i-grid-icon>
+                <image src="../images/icon-vip.png" />
+            </i-grid-icon>
+            <i-grid-label>书评</i-grid-label>
+        </i-grid-item>
+        <i-grid-item>
+            <i-grid-icon>
+                <image src="../images/icon-vip.png" />
+            </i-grid-icon>
+            <i-grid-label>交流</i-grid-label>
+        </i-grid-item>
+        <!-- <i-grid-item>
+            <i-grid-icon>
+                <image src="../images/icon-vip.png" />
+            </i-grid-icon>
+            <i-grid-label></i-grid-label>
+        </i-grid-item> -->
+    </i-grid>
+</view>

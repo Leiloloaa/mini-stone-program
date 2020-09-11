@@ -1,0 +1,9 @@
+/* pages/home.wxss */
+
+.slider {
+    width: 100%;
+}
+
+.i-noticebar {
+    background-color: #fff;
+}

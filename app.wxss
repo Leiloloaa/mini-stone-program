@@ -1,0 +1,16 @@
+/**app.wxss**/
+
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+.space {
+    height: 15rpx;
+}
+
+.gridBgc {
+    background-color: #fff;
+}
+
+.item-index--i-grid-item {
+    background-color: #fff;
+    box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+}
