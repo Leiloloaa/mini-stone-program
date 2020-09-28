@@ -7,3 +7,42 @@
 .i-noticebar {
     background-color: #fff;
 }
+
+.container {
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns {
+    border-radius: 50%;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: loading 1s 0.2s linear infinite alternate;
+}
+
+.btn {
+    background-color: rgb(72, 136, 246);
+    width: 22vw;
+    height: 15vh;
+    line-height: 7.5vh;
+    border-radius: 50%;
+    color: #eee;
+}
+
+@keyframes loading {
+    from {
+        width: 22vw;
+        height: 15vh;
+        background-color: rgb(218, 231, 253);
+    }
+    to {
+        background-color: rgb(218, 231, 253);
+        width: 27vw;
+        height: 19vh;
+    }
+}

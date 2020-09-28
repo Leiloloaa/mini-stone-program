@@ -5,6 +5,14 @@ Page({
      * 页面的初始数据
      */
     data: {
+        targetTime: 0,
+        clearTimer: false,
+        avatar: [
+            'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg',
+            'https://ossweb-img.qq.com/images/lol/web201310/skin/big81005.jpg',
+            'https://ossweb-img.qq.com/images/lol/web201310/skin/big25002.jpg',
+            'https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg'
+        ],
         floorGoods: [],
         openAttr: false,
         showChannel: 0,
@@ -54,7 +62,14 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
-
+        this.setData({
+            targetTime: new Date().getTime() + 86430000,
+        });
+    },
+    onUnload() {
+        this.setData({
+            clearTimer: true
+        });
     },
 
     /**
