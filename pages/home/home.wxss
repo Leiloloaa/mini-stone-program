@@ -18,31 +18,46 @@
 
 .btns {
     border-radius: 50%;
-    height: 16vh;
+    width: 180rpx;
+    height: 180rpx;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: loading 1s 0.2s linear infinite alternate;
+    animation: loading 2s 0.2s linear infinite alternate;
 }
 
 .btn {
     background-color: rgb(72, 136, 246);
-    width: 22vw;
-    height: 15vh;
-    line-height: 7.5vh;
+    width: 180rpx;
+    height: 180rpx;
     border-radius: 50%;
     color: #eee;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.btnlabel {
+    width: 180rpx;
+    height: 90rpx;
+    line-height: 120rpx;
+}
+
+.btnlabeltime {
+    width: 180rpx;
+    height: 90rpx;
+    line-height: 50rpx;
 }
 
 @keyframes loading {
-    from {
-        width: 22vw;
-        height: 15vh;
+    /* from {
+        width: 26vw;
+        height: 16vh;
         background-color: rgb(218, 231, 253);
-    }
+    } */
     to {
         background-color: rgb(218, 231, 253);
-        width: 27vw;
-        height: 19vh;
+        width: 230rpx;
+        height: 230rpx;
     }
 }

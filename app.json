@@ -1,13 +1,12 @@
 {
     "pages": [
         "pages/home/home",
-        "pages/article/article",
         "pages/my/my"
     ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "iShare",
+        "navigationBarTitleText": "前端智库",
         "navigationBarTextStyle": "black"
     },
     "tabBar": {
@@ -20,12 +19,6 @@
                 "iconPath": "images/nav/icon-index-b.png",
                 "selectedIconPath": "images/nav/icon-index-r.png",
                 "text": "首页"
-            },
-            {
-                "pagePath": "pages/article/article",
-                "iconPath": "images/nav/icon-cate-off.png",
-                "selectedIconPath": "images/nav/icon-cate-on.png",
-                "text": "测试"
             },
             {
                 "pagePath": "pages/my/my",

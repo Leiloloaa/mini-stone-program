@@ -5,28 +5,12 @@ Page({
      * 页面的初始数据
      */
     data: {
-        targetTime: 0,
-        clearTimer: false,
         avatar: [
             'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg',
             'https://ossweb-img.qq.com/images/lol/web201310/skin/big81005.jpg',
             'https://ossweb-img.qq.com/images/lol/web201310/skin/big25002.jpg',
             'https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg'
         ],
-        floorGoods: [],
-        openAttr: false,
-        showChannel: 0,
-        showBanner: 0,
-        showBannerImg: 0,
-        goodsCount: 40,
-        banner: [],
-        index_banner_img: 0,
-        userInfo: {},
-        imgurl: '',
-        sysHeight: 0,
-        loading: 0,
-        autoplay: true,
-        cardCur: 0,
         swiperList: [{
             id: 0,
             type: 'image',
@@ -56,20 +40,19 @@ Page({
             type: 'image',
             url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
         }],
+        h: '00',
+        m: '00',
+        s: '00'
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
-        this.setData({
-            targetTime: new Date().getTime() + 86430000,
-        });
+        this.queryTime()
     },
     onUnload() {
-        this.setData({
-            clearTimer: true
-        });
+        this.setData({});
     },
 
     /**
@@ -119,5 +102,35 @@ Page({
      */
     onShareAppMessage: function() {
 
+    },
+
+    queryTime() {
+        const that = this
+        let hou = that.data.h
+        let min = that.data.m
+        let sec = that.data.s
+        setInterval(() => {
+            sec++
+
+            if (sec >= 60) {
+                sec = 0
+                min++
+                if (min >= 60) {
+                    min = 0
+                    hou++
+                    that.setData({
+                        h: (hou < 10 ? '0' + hou : hou)
+                    })
+                } else {
+                    that.setData({
+                        m: (min < 10 ? '0' + min : min)
+                    })
+                }
+            } else {
+                that.setData({
+                    s: (sec < 10 ? '0' + sec : sec)
+                })
+            }
+        }, 60000)
     }
 })

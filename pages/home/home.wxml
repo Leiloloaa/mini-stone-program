@@ -9,8 +9,8 @@
         <view class="container">
             <view class="btns">
                 <view class="btn">
-                    打卡
-                    <i-count-down target="{{targetTime}}" countdown-class="big" clear-timer="{{clearTimer}}"></i-count-down>
+                    <view class="btnlabel">打卡</view>
+                    <view class="btnlabeltime">{{h}}:{{m}}:{{s}}</view>
                 </view>
             </view>
         </view>
@@ -26,41 +26,21 @@
     <i-grid>
         <i-grid-item>
             <i-grid-icon>
-                <image src="../../images/vue.svg" />
+                <image src="../../images/base.svg" style="display:inline-block;width:60rpx;height:60rpx;" />
             </i-grid-icon>
-            <i-grid-label>Vue</i-grid-label>
+            <i-grid-label>基础文</i-grid-label>
         </i-grid-item>
         <i-grid-item>
             <i-grid-icon>
-                <image src="../../images/angular.svg" />
+                <image src="../../images/vue.svg" style="display:inline-block;width:60rpx;height:60rpx;" />
             </i-grid-icon>
-            <i-grid-label>Angular</i-grid-label>
+            <i-grid-label>技术文</i-grid-label>
         </i-grid-item>
         <i-grid-item>
             <i-grid-icon>
-                <image src="../images/icon-vip.png" />
+                <image src="../../images/zawen.svg" style="display:inline-block;width:60rpx;height:60rpx;" />
             </i-grid-icon>
-            <i-grid-label>React</i-grid-label>
+            <i-grid-label>杂文</i-grid-label>
         </i-grid-item>
-    </i-grid>
-    <i-grid>
-        <i-grid-item>
-            <i-grid-icon>
-                <image src="../images/icon-vip.png" />
-            </i-grid-icon>
-            <i-grid-label>书评</i-grid-label>
-        </i-grid-item>
-        <i-grid-item>
-            <i-grid-icon>
-                <image src="../images/icon-vip.png" />
-            </i-grid-icon>
-            <i-grid-label>交流</i-grid-label>
-        </i-grid-item>
-        <!-- <i-grid-item>
-            <i-grid-icon>
-                <image src="../images/icon-vip.png" />
-            </i-grid-icon>
-            <i-grid-label></i-grid-label>
-        </i-grid-item> -->
     </i-grid>
 </view>
