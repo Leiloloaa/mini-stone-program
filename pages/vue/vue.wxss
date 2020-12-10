@@ -1,4 +1,4 @@
-/**article.wxss**/
+/**vue.wxss**/
 
 .container {
     background-color: #f8f8f8;

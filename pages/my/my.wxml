@@ -9,7 +9,7 @@
         </view>
         <view class="middle">
             <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-            <view class="userinfo-nickname">{{userInfo.nickName}}</view> 
+            <view class="userinfo-nickname">{{userInfo.nickName}}</view>
         </view>
         <view class="right">
             <!-- <view class="child">
@@ -19,33 +19,31 @@
             </view> -->
         </view>
     </view>
-    <view class="litterIcon">
-        <!-- <i-cell-group>
+    <!-- <i-cell-group>
             <i-cell title="我的订单" value="查看全部订单" is-link url="/pages/dashboard/index">
                 <i-icon type="activity" size="20" color="#80848f" slot="icon" />
             </i-cell>
         </i-cell-group> -->
-        <i-grid i-class="gridBgc">
-            <i-grid-item>
-                <i-grid-icon>
-                    <image src="../../images/icons/waitSend.svg" />
-                </i-grid-icon>
-                <i-grid-label>打卡天数（1）</i-grid-label>
-            </i-grid-item>
-            <i-grid-item>
-                <i-grid-icon>
-                    <image src="../../images/icons/waitSend.svg" />
-                </i-grid-icon>
-                <i-grid-label>阅读次数（2）</i-grid-label>
-            </i-grid-item>
-            <i-grid-item>
-                <i-grid-icon>
-                    <image src="../../images/icons/waitAck.svg" />
-                </i-grid-icon>
-                <i-grid-label>点赞次数（10）</i-grid-label>
-            </i-grid-item>
-        </i-grid>
-    </view>
+    <i-grid i-class="gridBgc">
+        <i-grid-item>
+            <i-grid-icon>
+                <!-- <image src="../../images/icons/waitSend.svg" /> -->
+            </i-grid-icon>
+            <i-grid-label>打卡天数（1）</i-grid-label>
+        </i-grid-item>
+        <i-grid-item>
+            <i-grid-icon>
+                <!-- <image src="../../images/icons/waitSend.svg" /> -->
+            </i-grid-icon>
+            <i-grid-label>阅读次数（2）</i-grid-label>
+        </i-grid-item>
+        <i-grid-item>
+            <i-grid-icon>
+                <!-- <image src="../../images/icons/waitAck.svg" /> -->
+            </i-grid-icon>
+            <i-grid-label>点赞次数（10）</i-grid-label>
+        </i-grid-item>
+    </i-grid>
     <view class="space"></view>
     <view class="list">
         <view class="space"></view>

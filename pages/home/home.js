@@ -51,9 +51,7 @@ Page({
     onLoad: function(options) {
         this.queryTime()
     },
-    onUnload() {
-        this.setData({});
-    },
+    onUnload() {},
 
     /**
      * 生命周期函数--监听页面初次渲染完成
@@ -132,5 +130,11 @@ Page({
                 })
             }
         }, 60000)
+    },
+
+    toVue() {
+        wx.navigateTo({
+            url: '../vue/vue',
+        })
     }
 })

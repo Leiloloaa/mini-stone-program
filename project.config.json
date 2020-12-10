@@ -18,7 +18,7 @@
     "scopeDataCheck": false,
     "uglifyFileName": false,
     "checkInvalidKey": true,
-    "checkSiteMap": true,
+    "checkSiteMap": false,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
     "useMultiFrameRuntime": false,
@@ -38,8 +38,8 @@
     "packNpmRelationList": [],
     "minifyWXSS": true
   },
-  "compileType": "plugin",
-  "libVersion": "2.12.2",
+  "compileType": "miniprogram",
+  "libVersion": "2.14.1",
   "appid": "wxfae489bf6a10ca78",
   "projectname": "mini-stone-program",
   "debugOptions": {

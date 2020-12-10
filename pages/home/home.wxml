@@ -3,7 +3,7 @@
         <image src="{{item.url}}" mode='aspectFill'></image>
     </swiper-item>
 </swiper>
-<i-notice-bar icon="systemprompt">梦想不是挂之高阁，而是脚踏实地！</i-notice-bar>
+<i-notice-bar icon="systemprompt">&nbsp;&nbsp;朝着阳光走，身影永远在身后！</i-notice-bar>
 <view class="text-center">
     <view class="padding-sm radius shadow-warp bg-white margin-top">
         <view class="container">
@@ -16,7 +16,7 @@
         </view>
         <view class="padding">
             <view class="cu-avatar-group">
-                <view class="cu-avatar round" wx:for="{{4}}" wx:key style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big1000{{index+1}}.jpg);"></view>
+                <view class="cu-avatar round" wx:for="{{4}}" wx:key="index" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big1000{{index+1}}.jpg);"></view>
             </view>
             今日已完成打卡 38 人
         </view>
@@ -30,7 +30,7 @@
             </i-grid-icon>
             <i-grid-label>基础文</i-grid-label>
         </i-grid-item>
-        <i-grid-item>
+        <i-grid-item bindtap="toVue">
             <i-grid-icon>
                 <image src="../../images/vue.svg" style="display:inline-block;width:60rpx;height:60rpx;" />
             </i-grid-icon>

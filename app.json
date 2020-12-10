@@ -1,7 +1,11 @@
 {
     "pages": [
         "pages/home/home",
-        "pages/my/my"
+        "pages/my/my",
+        "pages/basearticle/basearticle",
+        "pages/vue/vue",
+        "pages/essay/essay",
+        "pages/article/article"
     ],
     "window": {
         "backgroundTextStyle": "light",
